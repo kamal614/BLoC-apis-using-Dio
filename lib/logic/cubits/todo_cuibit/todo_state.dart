@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:bloc_apis/data/models/todo_model.dart';
 
 abstract class TodoState {}

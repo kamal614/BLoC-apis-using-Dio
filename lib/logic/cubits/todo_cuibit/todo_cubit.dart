@@ -5,7 +5,9 @@ import 'package:bloc_apis/logic/cubits/todo_cuibit/todo_state.dart';
 import '../../../data/models/todo_model.dart';
 
 class TodoCubit extends Cubit<TodoState> {
-  TodoCubit() : super(TodoLoadingState());
+  TodoCubit() : super(TodoLoadingState()) {
+    fetchTodos();
+  }
   TodoRespositories todoRespositories = TodoRespositories();
   void fetchTodos() async {
     try {
