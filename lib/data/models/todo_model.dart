@@ -1,12 +1,12 @@
-class TodoList {
+class TodoModel {
   int? userId;
   int? id;
   String? title;
   bool? completed;
 
-  TodoList({this.userId, this.id, this.title, this.completed});
+  TodoModel({this.userId, this.id, this.title, this.completed});
 
-  TodoList.fromJson(Map<String, dynamic> json) {
+  TodoModel.fromJson(Map<String, dynamic> json) {
     userId = json['userId'];
     id = json['id'];
     title = json['title'];
